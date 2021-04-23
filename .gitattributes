@@ -1,0 +1,42 @@
+# Set the default behavior, in case people don't have core.autocrlf set, to handle line endings
+# automatically for files detected as text and leave all files detected as binary untouched
+* text=auto
+
+# Extension specific settings
+# Text files should be normalised (convert to native line endings on checkout) unless EOL is specifically set
+# Where appropriate, define an external diff driver
+*.bat		text eol=crlf
+*.css		text diff=css
+*.csv		text
+*.eot		binary
+*.gif		binary
+*.htaccess	text
+*.htm		text diff=html
+*.html		text diff=html
+*.ico		binary
+*.java		text diff=java
+*.jpg		binary
+*.jpeg		binary
+*.js		text
+*.jsp		text diff=java
+*.php		text diff=php
+*.png		binary
+*.psd		binary
+*.properties	text
+*.sass		text diff=css
+*.scss		text diff=css
+*.sh		text eol=lf
+*.sql		text
+*.svg		text
+*.tab		text
+*.tif		binary
+*.tiff		binary
+*.tsv		text
+*.ttf		binary
+*.txt		text
+*.woff		binary
+*.woff2		binary
+*.xml		text
+
+# File specific settings
+gradlew     text eol=lf
